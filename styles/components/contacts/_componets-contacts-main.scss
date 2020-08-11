@@ -1,0 +1,130 @@
+.contacts-main {
+    display: grid;
+    grid-template-rows: 690px 580px;
+
+    &__form {
+        display: flex column;
+        justify-content: center;
+        align-items: center;
+        margin-top: 180px;
+        position: relative;
+
+        &__more-info {
+            position: absolute;
+            background-color: white;
+            border-radius: 12px;
+            width: 600px;
+            height: 420px;
+            top: -520px;
+            left: -200px;
+            box-shadow: $secondary-shadow;
+
+            h4 {
+                color: $primary-300;
+            }
+
+            button {
+                position: absolute;
+                bottom: 7%;
+                left: 30%;
+            }
+
+            &-details {
+                height: 207px;
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                grid-template-rows: 1fr 1fr;
+
+                &-address {
+                    width: 80%;
+                    margin: 0 auto;
+
+                    p{
+                        margin-top: 50px;
+                    }
+                }
+
+                &-time {
+                    width: 80%;
+                    margin: 0 auto;
+                    &-info {
+                        display: grid;
+                        grid-template-columns: 1fr 1fr;
+
+                        &-time {
+                            display: flex column;
+                            align-items: center;
+                            justify-content: space-around;
+
+                            p {
+                                margin-bottom: 36px;
+                                color: $secondary-800;
+                            }
+                        }
+                    }
+                }
+
+                &-contacts {
+                    width: 80%;
+                    margin: 0 auto;
+
+                    h4 {
+                        margin-top: 0;
+                    }
+                }
+               
+            }
+        }
+
+        h3 {
+            text-align: center;
+            color: $primary-300;
+        }
+
+        form button {
+            display: block;
+            align-self: center;
+            margin-left: 20px;
+        }
+    }
+
+    &__transport {
+        background-color: $secondary-50;
+
+        &-wrap {
+            display: flex column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            margin-top: 100px;
+
+            h3 {
+                color: $primary-300;
+            }
+
+            &-vehicles{
+                display: grid;
+                grid-template-columns: 1fr 1fr 1fr;
+                column-gap: 30px;
+
+                
+
+                &-info {
+                    color: $grey-700;
+                    text-align: left;
+                    
+                    h4 {
+                        color: $primary-300;
+                    }
+
+                    ul {
+                        li {
+                            margin:15px 0;
+                        }
+                    }
+                }
+            }   
+            
+        }
+    }
+}

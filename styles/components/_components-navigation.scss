@@ -1,0 +1,46 @@
+.navbar {
+    position: relative;
+    box-shadow: $navbar-shadow;
+
+    &__wrapper {
+        display: grid;
+        grid-template-columns: max-content 1fr max-content;
+        
+    }
+
+    &__items {
+        display: flex;
+        justify-content: flex-end;
+        padding: 0 30px;
+    }
+
+    &__item {
+        list-style: none;
+        margin: 15px;
+
+        a { 
+            text-decoration: none;
+            text-transform: uppercase;
+            color: $grey-700;
+            cursor: pointer;
+            transition: color 0.2s ease-out;
+        }
+
+        :hover {
+            color: $secondary-color;
+        }
+    }
+    &__logo {
+        display: grid;
+        grid-template-columns: max-content max-content;
+        column-gap: 16px;
+        align-items: center;
+    }
+
+    &__search {
+        display: grid;
+        grid-template-columns: max-content max-content;
+        column-gap: 30px;
+        align-items: center;
+    }
+}

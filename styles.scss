@@ -1,0 +1,34 @@
+@import './styles/generic/_generic-normalize';
+
+@import './styles/settings/_settings-typography';
+@import './styles/settings/_settings-animations';
+@import './styles/settings/_settings-shadows';
+@import './styles/settings/_settings-colors';
+@import './styles/settings/_settings-breakpoints';
+
+@import './styles/objects/_objects-containers';
+@import './styles/objects/objects-ul';
+@import './styles/objects/objects-inputs';
+
+@import './styles/elements/elements-links';
+@import './styles/elements/elements-textarea';
+
+@import './styles/utilities/utilities-icons';
+
+@import './styles/components/_components-button';
+@import './styles/components/_components-card';
+@import './styles/components/_components-filter';
+@import './styles/components/_components-header';
+@import './styles/components/_components-footer';
+@import './styles/components/_components-navigation';
+@import './styles/components/_components-program';
+@import './styles/components/_components-door';
+@import './styles/components/_components-revealing-list';
+@import './styles/components/_components-level-label';
+@import './styles/components/_components-level-popup';
+@import './styles/components/home/components-home-main';
+@import './styles/components/home/components-home-container';
+@import './styles/components/home/components-home-dots';
+@import './styles/components/teachers/components-teachers-main';
+@import './styles/components/teachers/components-teachers-circle-image';
+@import './styles/components/contacts/componets-contacts-main';

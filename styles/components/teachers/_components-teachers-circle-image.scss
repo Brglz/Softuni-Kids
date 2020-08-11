@@ -1,0 +1,49 @@
+.circle-image {
+    border-radius: 50%;
+    border: 8px solid $primary-300;
+    align-self: baseline;
+    margin-top: 80px;
+
+    &-people {
+        margin: 0;
+        margin-bottom: 30px;
+        align-self: center;
+    }
+
+    &-overlay {
+        position: absolute;
+        height: 172px;
+        width: 172px;
+        border-radius: 50%;
+        top: 9px;
+        left: 35px;
+        bottom: 0;
+        right: 0;
+        opacity: 0;
+        transition: .5s ease;
+        background-color: $secondary-800; 
+
+        &-img {
+            position: absolute;
+            top: 30%;
+            left: 42%;
+            z-index: 1;
+        }
+
+        &-text {
+            position: absolute;
+            top: 60%;
+            left: 25%;
+            color: white;
+            cursor: pointer;
+        }
+
+    }
+
+    &-overlay:hover {
+        opacity: 0.7;
+    }
+
+}
+
+

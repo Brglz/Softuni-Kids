@@ -1,0 +1,174 @@
+.home-main {
+    display: grid;
+    grid-template-rows: 600px 200px 555px 256px 540px;
+    row-gap: 60px;
+
+
+    &__about {
+    display: grid;
+    grid-template-columns: 1.75fr 1fr;
+    column-gap: 110px;
+    color: $grey-700;
+    position: relative;
+
+
+        .about-text {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .about-video {
+            position: relative;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .play-button {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            cursor: pointer;
+        }
+
+        &-accomplishments {
+
+            background-color: white;
+            position: absolute;
+            top: -90px;
+            left:5%;
+            z-index: 1;
+            display: grid;
+            grid-template-columns: 322px 1fr;
+            align-items: center;
+            width: 90%;
+            box-shadow: $tertiary-shadow;
+            border-radius: 12px;
+            min-height: 155px;
+
+            &-all-trainings {
+                justify-self: center;
+            }
+
+            &-dots {
+                position: absolute;
+                height: 100%;
+                left: 300px;
+                width: 12px;
+
+                &-blue {
+                    background-color: $blue-400;
+                }
+
+                &-white {
+                    background-color: white;
+                }
+            }
+
+            &-dot {
+                border-radius: 50%;
+                display: block;
+                width: 12px;
+                height: 12px;
+            }
+
+            &-list {
+                display: grid;
+                grid-template-columns: max-content max-content max-content max-content;
+                column-gap: 35px;
+
+                color: $grey-700;
+                list-style-type: none;
+            }
+
+            &-list-item {
+                display: grid;
+                grid-template-columns: min-content 1fr;
+                align-items: center;
+                column-gap: 32px;
+                min-width: max-content;
+
+                &-icon {
+                    display: inline-flex;
+                }
+
+                &-description {
+                    margin: 0;
+                }
+            }
+        }
+
+    }
+    
+    &__about-more-info {
+        display: grid;
+        grid-template-columns: 1fr max-content 1fr;
+        column-gap: 120px;
+        color: $grey-700;
+
+        .about-describe {
+            display: grid;
+            grid-template-columns: max-content 1fr;
+            column-gap: 20px;
+            align-items: baseline;
+        }
+
+        .about-skills {
+            display: grid;
+            grid-template-columns: max-content 1fr;
+            column-gap: 20px;
+            align-items: baseline;
+        }
+
+    }
+
+    &__program {
+        background-image: url('/assets/images/Subtract.jpg');
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: $grey-700;
+
+        &__wraper {
+            display: grid;
+            grid-template-columns: max-content 1.2fr 1fr;
+
+           .tasks {
+            display: flex;
+            justify-content: center;
+            align-items: flex-end;
+           }
+
+           .book {
+               margin: 20px 20px 0 0;
+           }
+        }
+        
+        
+    }
+
+    &__certificates {
+        display: grid;
+        grid-template-columns: max-content 1.7fr 1fr;
+        align-items: center;
+
+        .certificate {
+            position: relative;
+            width: 370;
+            height: 270;
+
+            span {
+                position: absolute;
+                top: 50%;
+                left: 40%;
+                transform: translate(-50%, -50%);
+            }
+        }
+    }
+
+    
+    
+}

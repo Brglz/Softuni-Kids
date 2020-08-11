@@ -1,0 +1,97 @@
+.teachers-main {
+    display: grid;
+    grid-template-rows: 550px 20px 1500px 12px 450px;
+
+    &__directors {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        
+
+        &-person {
+            display: grid;
+            grid-template-columns: max-content 1fr;
+            align-items: center;
+            column-gap: 35px;
+            
+            &-name {
+                margin: 0 0 10px 0;
+                width: max-content;
+                color: $primary-300;
+            }
+
+            &-title {
+                font-size: 14px;
+                color: $grey-400;
+                display: block;
+                margin-bottom: 25px;
+            }
+
+            &-info {
+                width: 80%;
+            }
+        }
+    }
+
+    &__horizontal-dots {
+        margin: 0 auto;
+    }
+
+    &__people {
+        width: 1100px;
+        margin: 0 auto;
+        margin-top: 100px;
+
+        &-row {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+            column-gap: 50px;
+            margin-bottom: 50px;
+
+            &-person {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                width: 242px;
+                position: relative;
+    
+                &-title {
+                    margin: 0 auto;
+                }   
+            }
+        }
+       
+    }
+
+    &__devider {
+        width: 100%;
+        height: 12px;
+        background-color: $blue-200;
+    }
+
+    &__form {
+        background-color: $blue-300;
+        color: white;
+
+        &-content {
+            display: flex column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            margin-top: 100px;
+
+            p {
+                width: 830px;
+                margin: 0 auto;
+                
+            }
+            
+            form {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+        }
+    }
+
+}

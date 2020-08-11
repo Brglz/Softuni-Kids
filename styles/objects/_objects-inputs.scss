@@ -1,0 +1,50 @@
+.form-input {
+    margin: 20px;
+    background-color: transparent;
+    border: 1px solid #FFFFFF;
+    border-radius: 6px;
+    color: white;
+    padding: 15px 20px;
+
+    &::placeholder {
+        color: white;
+    }
+
+    &:focus {
+        outline: none;
+        transform: scale(1.05)
+    } 
+
+    &:hover {
+        transition: all 0.5s 0s ease;
+    }
+
+    &-grey {
+        margin: 20px;
+        background-color: transparent;
+        border: 1px solid $grey-500;
+        border-radius: 6px;
+        padding: 15px 20px;
+        color: $grey-500;
+        width: 410px;
+
+        &::placeholder {
+            color: $grey-500;
+        }
+    
+        &:focus {
+            outline: none;
+            transform: scale(1.05)
+        } 
+    
+        &:hover {
+            transition: all 0.5s 0s ease;
+        }
+    }
+}
+
+.message {
+    width: 865px;
+    height: 190px;
+}
+
