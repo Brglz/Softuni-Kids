@@ -38,7 +38,7 @@
 
             background-color: white;
             position: absolute;
-            top: -90px;
+            top: -52px;
             left:5%;
             z-index: 1;
             display: grid;
@@ -47,7 +47,7 @@
             width: 90%;
             box-shadow: $tertiary-shadow;
             border-radius: 12px;
-            min-height: 155px;
+            min-height: 115px;
 
             &-all-trainings {
                 justify-self: center;
@@ -57,15 +57,11 @@
                 position: absolute;
                 height: 100%;
                 left: 300px;
+                bottom: 5px;
                 width: 12px;
 
-                &-blue {
-                    background-color: $blue-400;
-                }
+               
 
-                &-white {
-                    background-color: white;
-                }
             }
 
             &-dot {
@@ -73,13 +69,35 @@
                 display: block;
                 width: 12px;
                 height: 12px;
+                margin-bottom: 7px;
+                box-shadow: inset 0px 0px 2px rgba(0, 0, 0, 0.14),
+                            inset 0px 2px 2px rgba(0, 0, 0, 0.12),
+                            inset 0px 1px 3px rgba(0, 0, 0, 0.2);
+
+                &:first-child{
+                    box-shadow: none
+                }
+                
+                &:last-child{
+                    box-shadow: inset 0px 1px 3px rgba(0, 0, 0, 0.2);
+                    border-radius: 90px 90px 0 0;
+                    height: 6px;
+                }
+
+                &--blue {
+                    background-color: $blue-400;
+                }
+
+                &--white {
+                    background-color: white;
+                    
+                }
             }
 
             &-list {
                 display: grid;
                 grid-template-columns: max-content max-content max-content max-content;
                 column-gap: 35px;
-
                 color: $grey-700;
                 list-style-type: none;
             }
