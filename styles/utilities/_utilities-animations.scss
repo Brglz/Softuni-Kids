@@ -1,0 +1,15 @@
+.rotate {
+    transition: .3s all;
+}
+
+.rotate:hover {
+    transform: rotate(90deg);
+}
+
+.scale {
+    transition: .3 all;
+}
+
+.scale:hover {
+    transform: scale(1.1);
+}
