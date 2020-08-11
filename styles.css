@@ -1098,7 +1098,7 @@ footer li:hover {
 .home-main__about-accomplishments {
   background-color: white;
   position: absolute;
-  top: -90px;
+  top: -52px;
   left: 5%;
   z-index: 1;
   display: -ms-grid;
@@ -1112,7 +1112,7 @@ footer li:hover {
   -webkit-box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.14), 0px 2px 2px rgba(0, 0, 0, 0.12), 0px 1px 3px rgba(0, 0, 0, 0.2);
           box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.14), 0px 2px 2px rgba(0, 0, 0, 0.12), 0px 1px 3px rgba(0, 0, 0, 0.2);
   border-radius: 12px;
-  min-height: 155px;
+  min-height: 115px;
 }
 
 .home-main__about-accomplishments-all-trainings {
@@ -1124,15 +1124,8 @@ footer li:hover {
   position: absolute;
   height: 100%;
   left: 300px;
+  bottom: 5px;
   width: 12px;
-}
-
-.home-main__about-accomplishments-dots-blue {
-  background-color: #44A9F8;
-}
-
-.home-main__about-accomplishments-dots-white {
-  background-color: white;
 }
 
 .home-main__about-accomplishments-dot {
@@ -1140,6 +1133,29 @@ footer li:hover {
   display: block;
   width: 12px;
   height: 12px;
+  margin-bottom: 7px;
+  -webkit-box-shadow: inset 0px 0px 2px rgba(0, 0, 0, 0.14), inset 0px 2px 2px rgba(0, 0, 0, 0.12), inset 0px 1px 3px rgba(0, 0, 0, 0.2);
+          box-shadow: inset 0px 0px 2px rgba(0, 0, 0, 0.14), inset 0px 2px 2px rgba(0, 0, 0, 0.12), inset 0px 1px 3px rgba(0, 0, 0, 0.2);
+}
+
+.home-main__about-accomplishments-dot:first-child {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+.home-main__about-accomplishments-dot:last-child {
+  -webkit-box-shadow: inset 0px 1px 3px rgba(0, 0, 0, 0.2);
+          box-shadow: inset 0px 1px 3px rgba(0, 0, 0, 0.2);
+  border-radius: 90px 90px 0 0;
+  height: 6px;
+}
+
+.home-main__about-accomplishments-dot--blue {
+  background-color: #44A9F8;
+}
+
+.home-main__about-accomplishments-dot--white {
+  background-color: white;
 }
 
 .home-main__about-accomplishments-list {
