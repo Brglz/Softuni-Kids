@@ -2,9 +2,17 @@
     position: relative;
     box-shadow: $navbar-shadow;
 
+    @include for-phone-only {
+       
+    }
+
     &__wrapper {
         display: grid;
         grid-template-columns: max-content 1fr max-content;
+        @include for-phone-only {
+            grid-template-columns: 1.2fr 1fr;
+            width: 90%;
+        }
         
     }
 
@@ -12,6 +20,9 @@
         display: flex;
         justify-content: flex-end;
         padding: 0 30px;
+        @include for-phone-only {
+            display: none;
+        }
     }
 
     &__item {
@@ -42,5 +53,18 @@
         grid-template-columns: max-content max-content;
         column-gap: 30px;
         align-items: center;
+
+        .menu {
+            display: none;
+            @include for-phone-only {
+                display: inherit;
+            }
+        }
+
+        .search {
+            @include for-phone-only {
+                display: none;
+            }
+        }
     }
 }
