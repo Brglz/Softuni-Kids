@@ -519,6 +519,16 @@ textarea {
   width: 640px;
 }
 
+@media (max-width: 599px) {
+  .header__info-home .home-h1 {
+    width: 100%;
+    margin: 0;
+    text-align: center;
+    -ms-grid-column-align: center;
+        justify-self: center;
+  }
+}
+
 .header__info-teachers {
   background: #FFB402;
   color: #fff;
@@ -558,6 +568,12 @@ footer {
   color: #E6E6E6;
 }
 
+@media (max-width: 599px) {
+  footer {
+    max-width: 375px;
+  }
+}
+
 footer h4 {
   color: white;
 }
@@ -576,9 +592,22 @@ footer .main-footer-wraper {
           column-gap: 50px;
 }
 
+@media (max-width: 599px) {
+  footer .main-footer-wraper {
+    -ms-grid-columns: none;
+        grid-template-columns: none;
+  }
+}
+
 footer .main-footer-wraper .cyclop {
   position: absolute;
   bottom: 0px;
+}
+
+@media (max-width: 599px) {
+  footer .main-footer-wraper .cyclop {
+    display: none;
+  }
 }
 
 footer .main-footer-wraper .nav-div {
@@ -609,6 +638,14 @@ footer li:hover {
       grid-template-columns: max-content 1fr max-content;
 }
 
+@media (max-width: 599px) {
+  .navbar__wrapper {
+    -ms-grid-columns: 1.2fr 1fr;
+        grid-template-columns: 1.2fr 1fr;
+    width: 90%;
+  }
+}
+
 .navbar__items {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -617,6 +654,12 @@ footer li:hover {
       -ms-flex-pack: end;
           justify-content: flex-end;
   padding: 0 30px;
+}
+
+@media (max-width: 599px) {
+  .navbar__items {
+    display: none;
+  }
 }
 
 .navbar__item {
@@ -663,12 +706,37 @@ footer li:hover {
           align-items: center;
 }
 
+.navbar__search .menu {
+  display: none;
+}
+
+@media (max-width: 599px) {
+  .navbar__search .menu {
+    display: inherit;
+  }
+}
+
+@media (max-width: 599px) {
+  .navbar__search .search {
+    display: none;
+  }
+}
+
 .home-main {
   display: -ms-grid;
   display: grid;
   -ms-grid-rows: 600px 200px 555px 256px 540px;
       grid-template-rows: 600px 200px 555px 256px 540px;
   row-gap: 60px;
+}
+
+@media (max-width: 599px) {
+  .home-main {
+    -ms-grid-rows: max-content max-content max-content max-content max-content;
+        grid-template-rows: -webkit-max-content -webkit-max-content -webkit-max-content -webkit-max-content -webkit-max-content;
+        grid-template-rows: max-content max-content max-content max-content max-content;
+    overflow: hidden;
+  }
 }
 
 .home-main__about {
@@ -680,6 +748,13 @@ footer li:hover {
           column-gap: 110px;
   color: #565656;
   position: relative;
+}
+
+@media (max-width: 599px) {
+  .home-main__about {
+    -ms-grid-columns: none;
+        grid-template-columns: none;
+  }
 }
 
 .home-main__about .about-text {
@@ -738,6 +813,12 @@ footer li:hover {
           box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.14), 0px 2px 2px rgba(0, 0, 0, 0.12), 0px 1px 3px rgba(0, 0, 0, 0.2);
   border-radius: 12px;
   min-height: 115px;
+}
+
+@media (max-width: 599px) {
+  .home-main__about-accomplishments {
+    display: none;
+  }
 }
 
 .home-main__about-accomplishments-all-trainings {
@@ -832,6 +913,38 @@ footer li:hover {
   color: #565656;
 }
 
+@media (max-width: 599px) {
+  .home-main__about-more-info {
+    -ms-grid-columns: none;
+        grid-template-columns: none;
+  }
+}
+
+.home-main__about-more-info-dots {
+  display: block;
+}
+
+.home-main__about-more-info-dots-bot {
+  margin-top: 30px;
+}
+
+@media (max-width: 599px) {
+  .home-main__about-more-info-dots-bot {
+    display: none;
+  }
+}
+
+.home-main__about-more-info-dots-mobile {
+  display: none;
+}
+
+@media (max-width: 599px) {
+  .home-main__about-more-info-dots-mobile {
+    display: block;
+    margin: 0 auto;
+  }
+}
+
 .home-main__about-more-info .about-describe {
   display: -ms-grid;
   display: grid;
@@ -880,6 +993,13 @@ footer li:hover {
       grid-template-columns: max-content 1.2fr 1fr;
 }
 
+@media (max-width: 599px) {
+  .home-main__program__wraper {
+    -ms-grid-columns: none;
+        grid-template-columns: none;
+  }
+}
+
 .home-main__program__wraper .tasks {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -890,6 +1010,12 @@ footer li:hover {
   -webkit-box-align: end;
       -ms-flex-align: end;
           align-items: flex-end;
+}
+
+@media (max-width: 599px) {
+  .home-main__program__wraper .tasks {
+    display: none;
+  }
 }
 
 .home-main__program__wraper .book {
@@ -907,10 +1033,23 @@ footer li:hover {
           align-items: center;
 }
 
+@media (max-width: 599px) {
+  .home-main__certificates {
+    -ms-grid-columns: none;
+        grid-template-columns: none;
+  }
+}
+
 .home-main__certificates .certificate {
   position: relative;
   width: 370;
   height: 270;
+}
+
+@media (max-width: 599px) {
+  .home-main__certificates .certificate {
+    width: 80%;
+  }
 }
 
 .home-main__certificates .certificate span {
@@ -946,11 +1085,27 @@ footer li:hover {
       grid-template-rows: 550px 20px 1500px 12px 450px;
 }
 
+@media (max-width: 599px) {
+  .teachers-main {
+    -ms-grid-rows: max-content max-content max-content max-content max-content;
+        grid-template-rows: -webkit-max-content -webkit-max-content -webkit-max-content -webkit-max-content -webkit-max-content;
+        grid-template-rows: max-content max-content max-content max-content max-content;
+    overflow: hidden;
+  }
+}
+
 .teachers-main__directors {
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 1fr 1fr;
       grid-template-columns: 1fr 1fr;
+}
+
+@media (max-width: 599px) {
+  .teachers-main__directors {
+    -ms-grid-columns: none;
+        grid-template-columns: none;
+  }
 }
 
 .teachers-main__directors-person {
@@ -964,6 +1119,15 @@ footer li:hover {
           align-items: center;
   -webkit-column-gap: 35px;
           column-gap: 35px;
+}
+
+@media (max-width: 599px) {
+  .teachers-main__directors-person {
+    -ms-grid-columns: none;
+        grid-template-columns: none;
+    -webkit-transform: translateX(15%);
+            transform: translateX(15%);
+  }
 }
 
 .teachers-main__directors-person-name {
@@ -987,6 +1151,12 @@ footer li:hover {
 
 .teachers-main__horizontal-dots {
   margin: 0 auto;
+}
+
+@media (max-width: 599px) {
+  .teachers-main__horizontal-dots {
+    display: none;
+  }
 }
 
 .teachers-main__people {
@@ -1055,6 +1225,12 @@ footer li:hover {
   margin: 0 auto;
 }
 
+@media (max-width: 599px) {
+  .teachers-main__form-content p {
+    width: 100%;
+  }
+}
+
 .teachers-main__form-content form {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1065,6 +1241,15 @@ footer li:hover {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+@media (max-width: 599px) {
+  .teachers-main__form-content form {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
 }
 
 .circle-image {
