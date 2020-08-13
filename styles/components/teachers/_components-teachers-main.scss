@@ -2,9 +2,17 @@
     display: grid;
     grid-template-rows: 550px 20px 1500px 12px 450px;
 
+    @include for-phone-only {
+        grid-template-rows: max-content max-content max-content max-content max-content;
+        overflow: hidden;
+    }
+
     &__directors {
         display: grid;
         grid-template-columns: 1fr 1fr;
+        @include for-phone-only {
+            grid-template-columns: none;
+        }
         
 
         &-person {
@@ -12,6 +20,10 @@
             grid-template-columns: max-content 1fr;
             align-items: center;
             column-gap: 35px;
+            @include for-phone-only {
+                grid-template-columns: none;
+                transform: translateX(15%);
+            }
             
             &-name {
                 margin: 0 0 10px 0;
@@ -24,6 +36,7 @@
                 color: $grey-400;
                 display: block;
                 margin-bottom: 25px;
+                
             }
 
             &-info {
@@ -34,6 +47,9 @@
 
     &__horizontal-dots {
         margin: 0 auto;
+        @include for-phone-only {
+            display: none;
+        }
     }
 
     &__people {
@@ -47,6 +63,8 @@
             column-gap: 50px;
             margin-bottom: 50px;
 
+            
+
             &-person {
                 display: flex;
                 flex-direction: column;
@@ -54,6 +72,7 @@
                 align-items: center;
                 width: 242px;
                 position: relative;
+                
     
                 &-title {
                     margin: 0 auto;
@@ -73,6 +92,8 @@
         background-color: $blue-300;
         color: white;
 
+        
+
         &-content {
             display: flex column;
             justify-content: center;
@@ -83,6 +104,9 @@
             p {
                 width: 830px;
                 margin: 0 auto;
+                @include for-phone-only {
+                    width: 100%;
+                }
                 
             }
             
@@ -90,6 +114,9 @@
                 display: flex;
                 justify-content: center;
                 align-items: center;
+                @include for-phone-only {
+                    flex-direction: column;
+                }
             }
         }
     }
