@@ -3,6 +3,10 @@
     grid-template-rows: 600px 200px 555px 256px 540px;
     row-gap: 60px;
 
+    @include for-phone-only {
+        grid-template-rows: max-content max-content max-content max-content max-content;
+        overflow: hidden;
+    }
 
     &__about {
     display: grid;
@@ -10,6 +14,9 @@
     column-gap: 110px;
     color: $grey-700;
     position: relative;
+    @include for-phone-only {
+        grid-template-columns: none; 
+    }
 
 
         .about-text {
@@ -35,6 +42,10 @@
         }
 
         &-accomplishments {
+
+            @include for-phone-only {
+                display: none;
+            }
 
             background-color: white;
             position: absolute;
@@ -127,6 +138,30 @@
         column-gap: 120px;
         color: $grey-700;
 
+        @include for-phone-only {
+            grid-template-columns: none; 
+        }
+
+        &-dots {
+            display: block;
+           
+
+            &-bot {
+                margin-top: 30px;
+                @include for-phone-only {
+                    display: none;
+                }
+            }
+        }
+
+        &-dots-mobile {
+            display: none;
+            @include for-phone-only {
+                display: block;
+                margin: 0 auto;
+            }
+        }
+
         .about-describe {
             display: grid;
             grid-template-columns: max-content 1fr;
@@ -153,11 +188,17 @@
         &__wraper {
             display: grid;
             grid-template-columns: max-content 1.2fr 1fr;
+            @include for-phone-only {
+                grid-template-columns: none; 
+            }
 
            .tasks {
             display: flex;
             justify-content: center;
             align-items: flex-end;
+            @include for-phone-only {
+                display: none;
+            }
            }
 
            .book {
@@ -173,10 +214,18 @@
         grid-template-columns: max-content 1.7fr 1fr;
         align-items: center;
 
+        @include for-phone-only {
+            grid-template-columns: none; 
+        }
+
         .certificate {
             position: relative;
             width: 370;
             height: 270;
+            @include for-phone-only {
+                width: 80%;
+
+            }
 
             span {
                 position: absolute;
