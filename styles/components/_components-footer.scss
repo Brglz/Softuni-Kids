@@ -4,6 +4,10 @@ footer {
     background-color: $grey-700;
     color: $grey-200;
 
+    @include for-phone-only {
+        max-width: 375px;
+    }
+
     h4 {
         color: white;
     }
@@ -18,9 +22,16 @@ footer {
         grid-template-columns: 230px 246px 155px 177px 190px;
         column-gap: 50px;
 
+        @include for-phone-only {
+            grid-template-columns: none;
+        }
+
         .cyclop {
             position: absolute;
             bottom: 0px;
+            @include for-phone-only {
+                display: none;
+            }
         }
 
         .nav-div {
