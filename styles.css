@@ -443,8 +443,8 @@ textarea {
 }
 
 .scale:hover {
-  -webkit-transform: scale(1.1);
-          transform: scale(1.1);
+  -webkit-transform: scale(1.5);
+          transform: scale(1.5);
 }
 
 .btn {
@@ -840,8 +840,8 @@ footer li:hover {
   width: 12px;
   height: 12px;
   margin-bottom: 7px;
-  -webkit-box-shadow: inset 0px 0px 2px rgba(0, 0, 0, 0.14), inset 0px 2px 2px rgba(0, 0, 0, 0.12), inset 0px 1px 3px rgba(0, 0, 0, 0.2);
-          box-shadow: inset 0px 0px 2px rgba(0, 0, 0, 0.14), inset 0px 2px 2px rgba(0, 0, 0, 0.12), inset 0px 1px 3px rgba(0, 0, 0, 0.2);
+  -webkit-box-shadow: inset 0px 0px 2px rgba(0, 0, 0, 0.24), inset 0px 2px 2px rgba(0, 0, 0, 0.22), inset 0px 1px 3px rgba(0, 0, 0, 0.2);
+          box-shadow: inset 0px 0px 2px rgba(0, 0, 0, 0.24), inset 0px 2px 2px rgba(0, 0, 0, 0.22), inset 0px 1px 3px rgba(0, 0, 0, 0.2);
 }
 
 .home-main__about-accomplishments-dot:first-child {
@@ -850,10 +850,8 @@ footer li:hover {
 }
 
 .home-main__about-accomplishments-dot:last-child {
-  -webkit-box-shadow: inset 0px 1px 3px rgba(0, 0, 0, 0.2);
-          box-shadow: inset 0px 1px 3px rgba(0, 0, 0, 0.2);
-  border-radius: 90px 90px 0 0;
-  height: 6px;
+  -webkit-box-shadow: inset 0px 2px 2px rgba(0, 0, 0, 0.34), 0px 0px 0px rgba(0, 0, 0, 0), 0px 0px 0px rgba(0, 0, 0, 0);
+          box-shadow: inset 0px 2px 2px rgba(0, 0, 0, 0.34), 0px 0px 0px rgba(0, 0, 0, 0), 0px 0px 0px rgba(0, 0, 0, 0);
 }
 
 .home-main__about-accomplishments-dot--blue {
@@ -922,6 +920,12 @@ footer li:hover {
 
 .home-main__about-more-info-dots {
   display: block;
+}
+
+@media (max-width: 599px) {
+  .home-main__about-more-info-dots {
+    display: none;
+  }
 }
 
 .home-main__about-more-info-dots-bot {

@@ -81,8 +81,8 @@
                 width: 12px;
                 height: 12px;
                 margin-bottom: 7px;
-                box-shadow: inset 0px 0px 2px rgba(0, 0, 0, 0.14),
-                            inset 0px 2px 2px rgba(0, 0, 0, 0.12),
+                box-shadow: inset 0px 0px 2px rgba(0, 0, 0, 0.24),
+                            inset 0px 2px 2px rgba(0, 0, 0, 0.22),
                             inset 0px 1px 3px rgba(0, 0, 0, 0.2);
 
                 &:first-child{
@@ -90,9 +90,11 @@
                 }
                 
                 &:last-child{
-                    box-shadow: inset 0px 1px 3px rgba(0, 0, 0, 0.2);
-                    border-radius: 90px 90px 0 0;
-                    height: 6px;
+                    // box-shadow: inset 0px 1px 3px rgba(0, 0, 0, 0.2);
+                    // border-radius: 90px 90px 0 0;
+                    // height: 6px;
+                    box-shadow: inset 0px 2px 2px rgba(0, 0, 0, 0.34), 0px 0px 0px rgba(0, 0, 0, 0), 0px 0px 0px rgba(0, 0, 0, 0);                    ;
+
                 }
 
                 &--blue {
@@ -144,7 +146,9 @@
 
         &-dots {
             display: block;
-           
+            @include for-phone-only {
+                display: none;
+            }
 
             &-bot {
                 margin-top: 30px;
