@@ -2,10 +2,6 @@
     position: relative;
     box-shadow: $navbar-shadow;
 
-    @include for-phone-only {
-       
-    }
-
     &__wrapper {
         display: grid;
         grid-template-columns: max-content 1fr max-content;

@@ -438,13 +438,13 @@ textarea {
 }
 
 .scale {
-  -webkit-transition: .3 all;
-  transition: .3 all;
+  -webkit-transition: .5 all;
+  transition: .5 all;
 }
 
 .scale:hover {
-  -webkit-transform: scale(1.5);
-          transform: scale(1.5);
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
 }
 
 .btn {
